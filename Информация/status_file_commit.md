@@ -2,8 +2,7 @@
 
 ```mermaid
 graph TD;
-  untracked -- "git add" --> staged;
-  staged + tracked    -- "git commit"     --> tracked/comitted;
-  tracked/comitted -- "Изменения"   --> staged + tracked;
+    untracked -- "git add" --> staged;
+    staged + tracked    -- "git commit"     --> tracked/comitted;
+    tracked/comitted -- "change"   --> staged + tracked;
 ```
-
