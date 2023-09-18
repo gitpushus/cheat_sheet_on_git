@@ -1,8 +1,10 @@
 ```mermaid
+Варианты статусов:  untracked/tracked, staged и modified
+
 graph LR;
   untracked -- "git add" --> staged;
-  staged    -- "???"     --> tracked/comitted;
+  staged + tracked    -- "git commit"     --> tracked/comitted;
+  tracked/comitted -- "Изменения"   --> staged + tracked;
 
-%% стрелка без текста для примера: 
-  A --> B;
-``` 
+```
+
